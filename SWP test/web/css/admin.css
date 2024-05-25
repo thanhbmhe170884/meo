@@ -1,0 +1,134 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 2024 May 21, 08:24:42
+    Author     : Dell
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 60px; /* Để footer không đè lên nội dung */
+}
+
+.header {
+    width: 100%;
+    background-color: #CC99CC;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-left,
+.header-center,
+.header-right {
+    flex: 1;
+    text-align: center;
+}
+
+.header-left {
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+}
+
+.header-right {
+    text-align: right;
+    margin: 10px;
+    padding: 10px;
+}
+
+.term {
+    display: inline-block;
+    border: 3px solid #fff;
+    padding: 25px 10px;
+    border-radius: 13px;
+}
+
+.logo {
+    max-height: 90px;
+}
+
+.header-image {
+    max-height: 50px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+.class-box {
+    width: 33%;
+    text-align: center;
+    padding: 13px;
+    margin: 35px 0;
+    background: linear-gradient(45deg, #CC99CC, #8A2BE2);
+    border: 3px solid #8A2BE2;
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.box:hover {
+    transform: translateY(-10px);
+}
+
+.box::before {
+    content: '';
+    display: block;
+    margin: 0 auto 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+}
+
+.box:nth-child(1)::before { background-color: #4CAF50; }
+.box:nth-child(2)::before { background-color: #FF9800; }
+.box:nth-child(3)::before { background-color: #F44336; }
+.box:nth-child(4)::before { background-color: #2196F3; }
+.box:nth-child(5)::before { background-color: #9C27B0; }
+.box:nth-child(6)::before { background-color: #3F51B5; }
+
+.footer {
+    width: 100%;
+    background-color: #CC99CC    ;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <context-param>
+        <param-name>username</param-name>
+        <param-value>admin</param-value>
+    </context-param>
+    <context-param>
+        <param-name>password</param-name>
+        <param-value>123</param-value>
+    </context-param>
+    <servlet>
+        <servlet-name>Loginservlet</servlet-name>
+        <servlet-class>Loginservlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>test</servlet-name>
+        <servlet-class>test</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Loginservlet</servlet-name>
+        <url-pattern>/Loginservlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>test</servlet-name>
+        <url-pattern>/test</url-pattern>
+    </servlet-mapping>
+</web-app>
